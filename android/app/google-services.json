@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "13571525924",
+    "project_id": "telegram-bot-c06c0",
+    "storage_bucket": "telegram-bot-c06c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13571525924:android:7e528e78137b69e0a637b1",
+        "android_client_info": {
+          "package_name": "com.example.telegram_bot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ5RowIQ30y4GasY6KTo0miig8qg8-8gw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

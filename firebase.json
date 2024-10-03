@@ -1,0 +1,25 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "telegram-bot-c06c0",
+                    "appId": "1:13571525924:android:7e528e78137b69e0a637b1",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "telegram-bot-c06c0",
+                    "configurations": {
+                        "android": "1:13571525924:android:7e528e78137b69e0a637b1",
+                        "ios": "1:13571525924:ios:b6849f7dc15c0960a637b1",
+                        "macos": "1:13571525924:ios:b6849f7dc15c0960a637b1",
+                        "web": "1:13571525924:web:3b1eea24eb9ef363a637b1",
+                        "windows": "1:13571525924:web:b6460dbdfec1a527a637b1"
+                    }
+                }
+            }
+        }
+    }
+}

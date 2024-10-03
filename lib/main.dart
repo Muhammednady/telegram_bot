@@ -3,11 +3,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:http/http.dart' as http;
+import 'package:package_info_plus/package_info_plus.dart';
 
 void main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
-
+  WidgetsFlutterBinding.ensureInitialized();
+   await Firebase.initializeApp();
+   //packageInfo();
   runApp(const MyApp());
 }
 
@@ -26,6 +27,13 @@ class MyApp extends StatelessWidget {
       home: const MyHomePage(),
     );
   }
+}
+
+void packageInfo() async {
+  PackageInfo packageInfo = await PackageInfo.fromPlatform();
+
+  print('=======================packagename==============================');
+  print(packageInfo.packageName);
 }
 
 class MyHomePage extends StatefulWidget {
@@ -79,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> _sendMessageToTelegram(String message) async {
     const String botToken = '7850027183:AAEwRnzeHdhS5IKO8bF20ubsPi3_lLyt24Q';
-    final String chatId = 'YOUR_CHAT_ID';
+    const String chatId = 'YOUR_CHAT_ID';
     final String url =
         'https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=$message';
 
